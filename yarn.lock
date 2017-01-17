@@ -516,11 +516,11 @@ babel-plugin-dev-expression@^0.2.1:
   version "0.2.1"
   resolved "http://registry.npm.taobao.org/babel-plugin-dev-expression/download/babel-plugin-dev-expression-0.2.1.tgz#d4a7beefefbb50e3f2734990a82a2486cf9eb9ee"
 
-babel-plugin-dva-hmr@^0.1.0:
-  version "0.1.0"
-  resolved "http://registry.npm.taobao.org/babel-plugin-dva-hmr/download/babel-plugin-dva-hmr-0.1.0.tgz#e798bdc14201cebf476c2f51c7613e95e4c74d4f"
+babel-plugin-dva-hmr:
+  version "0.3.2"
+  resolved "http://registry.npm.taobao.org/babel-plugin-dva-hmr/download/babel-plugin-dva-hmr-0.3.2.tgz#10fe0fc4b9ebb3be5ae3295c5cdf8f0a60facbdb"
 
-babel-plugin-import@^1.0.1:
+babel-plugin-import:
   version "1.1.0"
   resolved "http://registry.npm.taobao.org/babel-plugin-import/download/babel-plugin-import-1.1.0.tgz#1108ce0dcd183a11d61f979e6037df9599e74aaa"
 
