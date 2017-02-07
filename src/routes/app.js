@@ -67,7 +67,7 @@ function App ({children, location, dispatch, app}) {
         : <div className={styles.spin}><Spin tip='加载用户信息...' spinning={loading} size='large'><Login {...loginProps} /></Spin></div>}</div>
   )
 }
-
+//children 是一个react element，那么他是什么呢？
 //login true or false 来判断 
 App.propTypes = {
   children: PropTypes.element.isRequired,
@@ -82,4 +82,6 @@ App.propTypes = {
 }
 
 //  App 的属性又在哪里呢？
+//https://github.com/zuiidea/antd-admin/issues/24
+//react-router 
 export default connect(({app}) => ({app}))(App)
