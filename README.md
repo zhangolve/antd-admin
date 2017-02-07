@@ -37,14 +37,14 @@
 
 ```bash
 ├── /mock/           # 数据mock的接口文件
-├── /dist/           # 项目输出目录
+├── /dist/           # 项目输出目录 不再是1个js文件输出了，而是多个js，每个不超过1mb
 ├── /src/            # 项目源码目录
-│ ├── /components/   # 项目组件
-│ ├── /routes/       # 路由组件
-│ ├── /models/       # 数据模型
-│ ├── /services/     # 数据接口
-│ ├── /utils/        # 工具函数
-│ ├── route.js       # 路由配置
+│ ├── /components/   # 项目组件  可以理解为零件
+│ ├── /routes/       # 路由组件  路由组件最后组成页面
+│ ├── /models/       # 数据模型中填写dva的相关代码，执行动作，最难理解
+│ ├── /services/     # 数据接口 模拟数据
+│ ├── /utils/        # 工具函数  
+│ ├── route.js       # 路由配置 
 │ ├── index.js       # 入口文件
 │ └── index.html     
 ├── package.json     # 项目信息
@@ -107,3 +107,16 @@ web
 移动
 
 ![](assets/demo3.gif)
+
+##
+
+其他见相关的代码注释
+
+相关了解：
+* [dva的八个基本概念](https://github.com/dvajs/dva/blob/master/docs/Concepts_zh-CN.md)
+* [dva项目](https://github.com/dvajs/dva)
+
+effect 副作用
+app.modal 
+connect 
+

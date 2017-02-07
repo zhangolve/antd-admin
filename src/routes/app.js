@@ -11,6 +11,7 @@ import { classnames } from '../utils'
 import '../components/layout/common.less'
 
 function App ({children, location, dispatch, app}) {
+  // modal/app.js 中命名空间为app的项目。写起来还是不够直接，不够顺手。
   const {login, loading, loginButtonLoading, user, siderFold, darkTheme, isNavbar, menuPopoverVisible} = app
   const loginProps = {
     loading,
@@ -19,7 +20,7 @@ function App ({children, location, dispatch, app}) {
       dispatch({type: 'app/login', payload: data})
     }
   }
-
+  //dispatch 进行触发 ，在这里loginProps是登录的属性。在login.js中有一个对应的onOk方法。
   const headerProps = {
     user,
     siderFold,
@@ -67,6 +68,7 @@ function App ({children, location, dispatch, app}) {
   )
 }
 
+//login true or false 来判断 
 App.propTypes = {
   children: PropTypes.element.isRequired,
   location: PropTypes.object,
@@ -79,4 +81,5 @@ App.propTypes = {
   darkTheme: PropTypes.bool
 }
 
+//  App 的属性又在哪里呢？
 export default connect(({app}) => ({app}))(App)

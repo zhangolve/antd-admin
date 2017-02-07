@@ -45,6 +45,15 @@ export default function ({history, app}) {
               cb(null, require('./routes/ui/search'))
             })
           }
+        },
+        {
+          path: 'navigation/navigation2/navigation21',
+          name: 'navigation/navigation2/navigation21',
+          getComponent (nextState, cb) {
+            require.ensure([], require => {
+              cb(null, require('./routes/nav/navigation21'))
+            })
+          }
         }, {
           path: '*',
           name: 'error',
@@ -60,3 +69,6 @@ export default function ({history, app}) {
 
   return <Router history={history} routes={routes} />
 }
+
+
+/*仿照上面中的navigation21 添加组件路由  */

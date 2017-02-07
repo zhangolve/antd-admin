@@ -1,4 +1,5 @@
 import {myCity, queryWeather, query} from '../services/dashboard'
+//服务的接口来自于services/dashboard里面，用于查询天气相关 
 import {parse} from 'qs'
 
 // zuimei 摘自 http://www.zuimeitianqi.com/res/js/index.js

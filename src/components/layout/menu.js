@@ -4,6 +4,7 @@ import { Link } from 'dva/router'
 import { menu } from '../../utils'
 
 const topMenus = menu.map(item => item.key)
+//layout.key  把菜单中的名字放到一个数组当中。
 const getMenus = function (menuArray, siderFold, parentPath) {
   parentPath = parentPath || '/'
   return menuArray.map(item => {

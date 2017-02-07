@@ -45,6 +45,10 @@ module.exports = [
           {
             key: 'navigation22',
             name: '三级导航2'
+          },
+          {
+            key: 'navigation31',
+            name: '三级导航3'
           }
         ]
       }
